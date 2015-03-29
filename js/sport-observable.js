@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-    var testEnvironment = require !== undefined && module !== undefined && module.exports != null;
+    var testEnvironment = require && module || false;
     if(testEnvironment) {
       var $ = require('jquery');
       var ko = require('knockout');
