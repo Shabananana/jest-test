@@ -6,7 +6,6 @@ describe('sport-observable', function() {
 		var ko = require('knockout')
 		var sportsObservable = require('../sport-observable.js');
 		var observable = new sportsObservable();
-		console.dir(observable);
 		expect(observable.name).toBe('');
 		expect(observable.leagueEntryOptions).toBe(null);
 		expect(typeof observable.isActive).toBe('function');

@@ -7,12 +7,12 @@ describe('sportMapper', function() {
 		var $ = require('jquery');
 		var sportMapper = require('../sport-mapper.js');
 		var mockData = {
-			  LeagueEntryOptions: [],
-        MultiMatchLimits: 1,
-        Name: 'Test Sport ViewModel',
-        SportIcon: '/',
-        IsActive: true,
-        IsSelected: false
+			LeagueEntryOptions: [],
+			MultiMatchLimits: 1,
+			Name: 'Test Sport ViewModel',
+      SportIcon: '/',
+      IsActive: true,
+      IsSelected: false
 		};
 		var formattedMockData = sportMapper.prototype.mapFromViewToObservable(mockData);
 		expect(formattedMockData.name).toBe(mockData.Name);

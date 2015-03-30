@@ -24,7 +24,7 @@
     }
 
     function mapFromViewToObservable(sportViewModel) {
-        var sportObservableModel = new SportObservable();
+        var sportObservableModel = testEnvironment ? new SportObservable() : new window.DK.Ugc.Observable.SportObservable();
         sportObservableModel.leagueEntryOptions = sportViewModel.LeagueEntryOptions;
         sportObservableModel.multiMatchLimits = sportViewModel.MultiMatchLimits;
         sportObservableModel.name = sportViewModel.Name;
